@@ -1,0 +1,5 @@
+﻿1 - Conta corrente com multiplas responsabilidades (SRP)
+2 - Inserir Conta Investimento (Open-Closed) 
+3 - Funcionarios. Calcular Salario. Novo Tipo de funcionario ( LSP)
+4 - Scrum problem (ISP), depois revisar conta corrente
+5 - Botão, algum problema? vamos usar esse botão para um motor, um alarme! (DIP)
