@@ -25,6 +25,7 @@
     public interface IDispositivo
     {
         bool Ligado { get; }
+
         void Ligar();
         void Desligar();
     }
