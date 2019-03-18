@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Xunit.Abstractions;
 
 namespace Cinq.Dojo.Solid.DoJeitoSERTU
 {
@@ -20,7 +20,7 @@ namespace Cinq.Dojo.Solid.DoJeitoSERTU
 
         public override double CalcularSalario()
         {
-            return Salario + Comissão;
+            return Salario *  (1 + Comissão);
         }
     }
 
@@ -36,11 +36,18 @@ namespace Cinq.Dojo.Solid.DoJeitoSERTU
 
     public class FolhaSalarial
     {
+        private readonly ITestOutputHelper _output;
+
+        public FolhaSalarial(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
         public void ImprimirFolhaSalarial(IList<Funcionario> funcionarios)
         {
             foreach (var funcionario in funcionarios)
             {
-                Console.WriteLine($"{funcionario.Nome} -- {funcionario.CalcularSalario()}");
+                _output.WriteLine($"{funcionario.Nome} -- {funcionario.CalcularSalario()}");
             }
         }
     }

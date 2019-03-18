@@ -1,5 +1,5 @@
 ﻿using System;
-using Moq;
+using Cinq.Dojo.Solid.Test.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Cinq.Dojo.Solid.Test
@@ -16,7 +16,7 @@ namespace Cinq.Dojo.Solid.Test
         [TestMethod]
         public void Debitar_test_sucesso()
         {
-            // var servico = new ContaService();
+            var servico = new ContaService();
             // EXEMPLO DE ASSERT => Assert.IsTrue(saldoEsperado == Conta.Saldo);
         }
 
