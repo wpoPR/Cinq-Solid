@@ -50,11 +50,11 @@
 
         public void Ligar()
         {
-            // ligar lampada
+            // ligar motor
         }
         public void Desligar()
         {
-            // desligar lampada
+            // desligar motor
         }
     }
 }

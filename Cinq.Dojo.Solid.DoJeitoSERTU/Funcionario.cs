@@ -20,7 +20,7 @@ namespace Cinq.Dojo.Solid.DoJeitoSERTU
 
         public override double CalcularSalario()
         {
-            return Salario *  (1 + Comissão);
+            return Salario + Comissão;
         }
     }
 
